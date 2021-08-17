@@ -10,15 +10,19 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
+    <div>
     <div className="App">
       <Header/>
       <Feature/>
       <About image={aboutimage} title='Download' button='App Store' button1='Play Store'/>
       <About2 image={aboutimage1} title='Connecting All Your Banking Needs' button='Get Started'/>
       <Subscribe/>
-      <Footer/>
      </div>
-  );
+    <div>      
+    <Footer/>
+    </div>
+  </div>
+ );
 }
 
 export default App;
