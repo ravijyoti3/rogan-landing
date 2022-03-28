@@ -1,0 +1,3 @@
+const CONSTANT = { HOW_IT_WORKS: "HOW IT WORKS", SERVICES: "SERVICES" };
+
+export default CONSTANT;
