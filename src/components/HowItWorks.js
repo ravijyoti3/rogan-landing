@@ -19,18 +19,16 @@ const HowItWorks = () => {
             <h1 className="intro-head text-white">Get started with us</h1>
           </div>
         </div>
-        <div className="px-52 items-center flex justify-between row-span-2 col-span-7 mt-5">
+        <div className=" px-52 items-center flex justify-between row-span-2 col-span-7 mt-5">
           <Card
             animation={downloadApp}
-            width={300}
             text="Step 1: Download the app"
           />
           <Card
             animation={choose}
-            width={300}
             text="Step 2: Choose your favourite salon"
           />
-          <Card animation={clock} width={300} text="Step 3: Pick a time slot" />
+          <Card animation={clock} text="Step 3: Pick a time slot" />
         </div>
       </div>
       {/* End Main Section */}

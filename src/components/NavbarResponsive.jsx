@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
-import {MenuIcon, XIcon} from '@heroicons/react/outline'
+import {MenuIcon, XIcon} from '@heroicons/react/outline';
 
-const NavBar = () => {
-  const [scrollUp, setScrollUp] = useState(false);
+const Navbar = () => {
+    const [scrollUp, setScrollUp] = useState(false);
   const [lastTop, setLastTop] = useState(0);
   const [top, setTop] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
+  const [nav, setNav] = useState(false);
+
+  const handleClick = () => setNav(!nav);
 
   const handleScroll = (e) => {
     // if (e.target.scrollingElement.scrollTop > lastTop) {
@@ -23,16 +26,13 @@ const NavBar = () => {
       handleScroll(e);
     });
   }, []);
-
-  return (
-    <div
-      className={`fixed top-0 w-screen px-10 mb-5 shadow-3xl transition-all`}
-      style={{ background: !top ? "#282828" : null, zIndex: 10 }}
-    >
-      <nav className="flex justify-between text-white items-center p-4">
-        <ul className="flex uppercase font-bold underline tracking-wider items-center">
-          <li>
-            <svg
+    return (
+        <div className='fixed top-0 w-screen mb-5 shadow-3xl transition-all' style={{ background: !top ? "#282828" : null, zIndex: 10 }}>
+        <div className='px-2 flex justify-between items-center w-full h-full text-white'>
+        <div className='flex items-center'>
+        <ul>
+        <li>
+        <svg
               width="185"
               height="75"
               viewBox="0 0 235 95"
@@ -65,26 +65,30 @@ const NavBar = () => {
                 />
               </defs>
             </svg>
-          </li>
+            </li>
+            </ul>
+            <ul className='hidden md:flex uppercase font-bold underline tracking-wider'>
+                <li>How It Works</li>
+                <li>Services</li>
+            </ul>
+        </div>
+        <div className= 'hidden md:flex pr-4'>
+            <button className="border-none">Download</button>
+        </div>
+        <div className="md:hidden" onClick={handleClick}>
+        {!nav ? <MenuIcon className="w-5"/> : <XIcon className="w-5"/>}
+        </div>
+        </div>
+        <ul className={!nav? 'hidden' :'absolute w-screen text-white px-2'} style={{ background: !top ? "#282828" : "#2828283f", zIndex: 10 }}>
+        <li className="border-b-2 w-full">How It Works</li>
+        <li className="border-b-2 w-full">Services</li>
+        <div className="flex flex-col my-4">
+            <button>Download</button>
+        </div>
         </ul>
-        <ul className="flex uppercase font-bold underline tracking-wider">
-          <li className="px-5 cursor-pointer">How It Works</li>
-          <li className="px-5 cursor-pointer">Services</li>
-        </ul>
-        <ul>
-          <li>
-            {/* Style/make as primary button */}
-            <a
-              className="bg-white text-black px-5 py-3 rounded-3xl font-semibold"
-              href="#Download"
-            >
-              Download
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  );
-};
+        </div>
 
-export default NavBar;
+    )
+}
+
+export default Navbar;

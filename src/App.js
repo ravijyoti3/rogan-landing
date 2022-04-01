@@ -5,15 +5,17 @@ import NavBar from "./components/NavBar";
 import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
 import AppGallery from "./components/AppGallery";
+import Navbar from "./components/NavbarResponsive";
 
 function App() {
   return (
     <div className="App">
-      <NavBar className="self-center" />
+    <Navbar/>
+      {/* <NavBar className="self-center" /> */}
       <Intro />
-      <HowItWorks />
+      {/* <HowItWorks />
       <AppGallery />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
