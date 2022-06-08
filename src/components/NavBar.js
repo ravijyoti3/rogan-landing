@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const NavBar = () => {
   const [scrollUp, setScrollUp] = useState(false);
