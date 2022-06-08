@@ -51,12 +51,11 @@
 
 .intro-head {
   font-family: "Work Sans", sans-serif;
-  line-height: 1.1;
-  tab-size: 4;
+  line-height: 0.88;
+  tab-size: 3.2;
   font-weight: 400;
   letter-spacing: -0.23rem;
   text-size-adjust: 100%;
-  font-size: 6.5rem;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   text-size-adjust: 100%;
@@ -65,7 +64,7 @@
 /* write @media screen for 1536px and 1280px and 1024px and 768px and 640px*/
 @media screen and (max-width: 1536px) {
   .intro-head {
-    font-size: 5.5rem;
+    font-size: 4.4rem;
   }
 }
 @media screen and (max-width: 1280px) {
@@ -83,31 +82,28 @@
     font-size: 4rem;
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 480px) {
   .intro-head {
-    font-size: 3.5rem;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
   }
 }
 
 #intro-helper-text {
   color: #aaa;
   line-height: 1.4;
-  font-size: 1.6rem;
-  text-size-adjust: 100%;
+  font-size: 1rem;
   font-weight: 540;
   font-family: "Work Sans", sans-serif;
 }
 
 #instruction {
   z-index: 4;
-  max-height: 100vh;
-  min-height: 0;
   /* background: radial-gradient(circle at 75% 0, #e0e0e0, rgba(54, 57, 51, 0)),
     #e0e0e0; */
   background: radial-gradient(circle at 75% 0, #282828, rgba(54, 57, 51, 0)),
     #282828;
   /* background-color: #282828; */
-  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -122,8 +118,9 @@
 }
 
 .card-container {
-  height: 25rem;
-  width: 25rem;
+  height: 20rem;
+  width: 20rem;
+  max-width: 20rem;
 }
 
 .gallery-image {

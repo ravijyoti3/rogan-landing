@@ -3,17 +3,17 @@ import footerPhone from "../assets/footer-phone.png";
 
 const Footer = () => {
   return (
-    <div className="px-20 pb-28 pt-2" style={{ background: "#121212" }}>
-      <div className="grid grid-cols-4 gap-4 justify-center items-center">
-        <div>
-          <div className="text-5xl font-semibold text-white text-left">
+    <div className="pb-28 pt-2" style={{ background: "#121212" }}>
+      <div className="lg:grid lg:grid-cols-6 gap-4 flex flex-col justify-center items-center">
+        <div className="col-span-2">
+          <div className="text-4xl mt-5 lg:mt-0 font-semibold text-white text-center">
             <h1>Thaks for,</h1>
             <h1>giving your time</h1>
           </div>
-          <div className="mt-10">
+          <div className="lg:mt-10 mt-0 flex justify-center">
             <svg
-              width="300"
-              height="120"
+              width="240"
+              height="96"
               viewBox="0 0 235 95"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -46,11 +46,11 @@ const Footer = () => {
             </svg>
           </div>
         </div>
-        <div className="col-span-2">
-          <div className="text-4xl text-gray-400 ">
+        <div className="col-span-2 mt-10 lg:mt-0">
+          <div className="text-3xl text-gray-400 ">
             <h1>Stay connected with us</h1>
           </div>
-          <div className="mt-10 flex justify-between px-40">
+          <div className="lg:mt-10 mt-2 flex justify-between">
             <a
               href="#!"
               type="button"
@@ -162,13 +162,13 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div>
-          <div className="text-4xl text-gray-200 mt-40">
+        <div className="col-span-2 mt-10 lg:mt-0">
+          <div className="lg:text-4xl text-3xl  text-gray-200 mt-10 lg:mt-40">
             <h1>For queries, write us at</h1>
 
-            <h1 className="font-light mt-2 text-3xl">✉️ team@therogan.com</h1>
+            <h1 className="font-light mt-2 text-2xl">✉️ team@therogan.com</h1>
           </div>
-          <div className="flex justify-center text-gray-600 font-semibold mt-40 text-lg">
+          <div className="flex justify-center text-gray-600 font-semibold mt-40 ">
             <a href="#" className="px-4">
               Term of use
             </a>

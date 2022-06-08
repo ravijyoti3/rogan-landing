@@ -11,9 +11,9 @@ const Card = ({ text, animation, width }) => {
     },
   };
   return (
-    <div>
-      <div className=" grid grid-rows-6 rounded p-3 iso-shadow card-container">
-        <div className="row-span-6 container items-center flex flex-col justify-between items-center">
+    <div className="flex flex-col items-center mb-10 lg:mb-0">
+      <div className=" grid grid-rows-6 rounded p-3 iso-shadow card-container ">
+        <div className="row-span-6 container items-center flex flex-col justify-between">
           <Lottie
             style={{
               borderRadius: 10,
@@ -22,7 +22,7 @@ const Card = ({ text, animation, width }) => {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center mt-10">
+      <div className="mt-10">
         <h1 id="intro-helper-text">{text}</h1>
       </div>
     </div>
