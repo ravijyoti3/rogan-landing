@@ -10,12 +10,12 @@ import Navbar from "./components/NavbarResponsive";
 function App() {
   return (
     <div className="App">
-    <Navbar/>
-      {/* <NavBar className="self-center" /> */}
+      {/* <Navbar /> */}
+      <NavBar className="self-center" />
       <Intro />
-      {/* <HowItWorks />
+      <HowItWorks />
       <AppGallery />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
