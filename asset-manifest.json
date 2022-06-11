@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rogan-landing/static/css/main.4d950fbe.css",
-    "main.js": "/rogan-landing/static/js/main.d456750e.js",
+    "main.js": "/rogan-landing/static/js/main.d45a9205.js",
     "static/js/787.4d71b38c.chunk.js": "/rogan-landing/static/js/787.4d71b38c.chunk.js",
     "static/media/Frame 1.png": "/rogan-landing/static/media/Frame 1.360f3c9554f0ed0faf46.png",
     "static/media/3.1 Shop Details.png": "/rogan-landing/static/media/3.1 Shop Details.1deb12b1ba325995b270.png",
@@ -20,11 +20,11 @@
     "static/media/logo.svg": "/rogan-landing/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/rogan-landing/index.html",
     "main.4d950fbe.css.map": "/rogan-landing/static/css/main.4d950fbe.css.map",
-    "main.d456750e.js.map": "/rogan-landing/static/js/main.d456750e.js.map",
+    "main.d45a9205.js.map": "/rogan-landing/static/js/main.d45a9205.js.map",
     "787.4d71b38c.chunk.js.map": "/rogan-landing/static/js/787.4d71b38c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d950fbe.css",
-    "static/js/main.d456750e.js"
+    "static/js/main.d45a9205.js"
   ]
 }
