@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import footerPhone from "../assets/footer-phone.png";
+import PrivacyPolicy from "./PrivacyPolicy";
 
 const Footer = () => {
+  const [visible, setVisible] = useState(false);
+
   return (
     <div className="pb-28 pt-2" style={{ background: "#121212" }}>
       <div className="lg:grid lg:grid-cols-6 gap-4 flex flex-col justify-center items-center">
@@ -52,7 +55,7 @@ const Footer = () => {
           </div>
           <div className="lg:mt-10 mt-2 flex justify-between">
             <a
-              href="#!"
+              href="https://www.facebook.com/Rogan.India"
               type="button"
               class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-blue-700 focus:outline-none focus:ring-0 transition duration-150 ease-in-out  w-16 h-16 m-1"
             >
@@ -73,7 +76,7 @@ const Footer = () => {
               </svg>
             </a>
 
-            <a
+            {/* <a
               href="#!"
               type="button"
               class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-blue-400 focus:outline-none focus:ring-0 transition duration-150 ease-in-out  w-16 h-16 m-1"
@@ -93,10 +96,10 @@ const Footer = () => {
                   d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
                 ></path>
               </svg>
-            </a>
+            </a> */}
 
             <a
-              href="#!"
+              href="https://www.youtube.com/channel/UC8prS4kMmrRfZmDNUBUCI0A"
               type="button"
               class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-red-600 focus:outline-none focus:ring-0 transition duration-150 ease-in-out  w-16 h-16 m-1"
             >
@@ -118,7 +121,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="#!"
+              href="https://www.instagram.com/rogan.india/"
               type="button"
               class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-pink-700 focus:outline-none focus:ring-0 transition duration-150 ease-in-out  w-16 h-16 m-1"
             >
@@ -140,7 +143,7 @@ const Footer = () => {
             </a>
 
             <a
-              href="#!"
+              href="https://www.linkedin.com/company/styleout/"
               type="button"
               class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-sky-700 focus:outline-none focus:ring-0 transition duration-150 ease-in-out  w-16 h-16 m-1"
             >
@@ -169,17 +172,16 @@ const Footer = () => {
             <h1 className="font-light mt-2 text-2xl">✉️ team@therogan.com</h1>
           </div>
           <div className="flex justify-center text-gray-600 font-semibold mt-40 ">
-            <a href="#" className="px-4">
+            {/* <a href="#" className="px-4">
               Term of use
-            </a>
-            <a href="#" className="px-4">
+            </a> */}
+            <p onClick={() => setVisible(true)} className="px-4 cursor-pointer">
               Privacy policy
-            </a>
-            <a href="#" className="px-4">
-              @2022 Rogan
-            </a>
+            </p>
+            <p className="px-4">@2022 Rogan</p>
           </div>
         </div>
+        <PrivacyPolicy setVisible={setVisible} visible={visible} />
       </div>
     </div>
   );

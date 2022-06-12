@@ -73,7 +73,7 @@ const AppGallery = () => {
           className="lg:flex hidden flex-col"
           style={{ transform: `translateX(-50px)`, marginTop: "12rem" }}
         >
-          <img src={splash1} className="rounded-xl gallery-image" />
+          <img src={splash1} className="rounded-xl gallery-image " />
           <img src={splash2} className="rounded-xl gallery-image" />
         </div>
         <div
@@ -99,7 +99,7 @@ const AppGallery = () => {
         <div className="lg:flex flex-col col-span-2 hidden neomorph-phone h-min p-3 pb-6">
           <img
             src={splash}
-            className="rounded-3xl "
+            className="rounded-3xl"
             style={{ zIndex: 5, borderRadius: 50 }}
           />
         </div>
