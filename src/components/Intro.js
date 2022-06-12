@@ -27,7 +27,7 @@ const Intro = () => {
             <h1 className="text-white ">{text2}</h1>
           </div>
           <div className="mt-5">
-            <p id="intro-helper-text">Content team is still working </p>
+            <p id="intro-helper-text">Coming soon, with a catchy line!</p>
           </div>
         </div>
       </div>
